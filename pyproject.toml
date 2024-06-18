@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "neo4j-demos"
+version = "0.1.0"
+description = ""
+authors = ["Clément Doumouro <clement.doumouro@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "demos" }]
+exclude = ["demos/tests"]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyterlab = "^4.2.2"
+notebook = "^7.2.1"
+tarentula = "^4.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
