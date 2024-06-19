@@ -3,7 +3,8 @@ services:
   neo4j:
     image: neo4j:5-community
     volumes:
-      - ${HOME}/neo4j/demo:/var/lib/neo4j/import
+      - ./data:/var/lib/neo4j/data
+      - ./import:/var/lib/neo4j/import
     environment:
       NEO4J_AUTH: none
       NEO4J_PLUGINS: '["apoc"]'
