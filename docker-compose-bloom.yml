@@ -3,7 +3,7 @@ services:
   neo4j:
     image: neo4j:5-enterprise
     volumes:
-      - ./data-enterprise:/var/lib/neo4j/data
+      - ./data-bloom:/var/lib/neo4j/data
       - ./import:/var/lib/neo4j/import
       - ./licenses:/var/lib/neo4j/licenses
       - ./plugins:/var/lib/neo4j/plugins
